@@ -22,7 +22,7 @@
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <form action="<?php echo $_SERVER['php_SELF'];?>" method="POST">
+    <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
         <header>Dowalond Thumbnail</header>
         <div class="url-input">
             <span class="title">Paste video url:</span>
@@ -35,7 +35,7 @@
         </div>
 
         <div class="preview-area">
-            <img class="thumbnail" src="img/image.png" alt="thumbnail">
+            <img class="thumbnail" src="img/1.jpeg" alt="thumbnail">
             <i class=" icon fas fa-cloud-download-alt"></i>
             <span>paste video url to see preview</span>
         </div>
