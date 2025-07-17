@@ -5,7 +5,7 @@
         curl_setopt($ch ,CURLOPT_RETURNTRANSFER,1);
         $download = curl_exec($ch);
         curl_close($ch);
-        header('Content-type:img/image.png');
+        header('Content-Type: image/png'); // or 'image/jpeg' depending on file
         header('content-disposition:attachment; filename="thumbnail.jpg"');
         echo $download;
     }
@@ -28,14 +28,14 @@
             <span class="title">Paste video url:</span>
 
             <div class="field">
-                <input type="text" placeholder="https://www.youtube.com/wathch?v=lqwdD2ivIbm" required>
-                <div class="hidden-input" type="hidden"></div>
+                <input type="text"  name="videourl" placeholder="https://www.youtube.com/watch?v=lqwdD2ivIbm" required>
+                <input type="hidden" class="hidden-input" name="imgurl">
                 <div class="bottom-line"></div>
             </div>
         </div>
 
         <div class="preview-area">
-            <img class="thumbnail" src="img/1.jpeg" alt="thumbnail">
+            <img class="thumbnail" src="img/1.jpg" alt="thumbnail">
             <i class=" icon fas fa-cloud-download-alt"></i>
             <span>paste video url to see preview</span>
         </div>
